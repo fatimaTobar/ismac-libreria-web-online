@@ -78,7 +78,7 @@
          <input class="form-control" step="any" type="number" id="precio" name="precio"  value="${libro.precio}" required />
       </div>
       <div class="form-group">
-           <label for="idCategoria" class="form-label">Categoria</label>
+           <label for="idCategoria" class="form-label">**Categoria**</label>
            <select class="form-select" id="idCategoria" name="idCategoria" required >
              <c:forEach var="item" items="${categorias}"> 
                 <option value="${item.idCategoria}" ${item.idCategoria == libro.categoria.idCategoria? 'selected' : ''}>${item.categoria}</option>
@@ -86,7 +86,7 @@
         </select>
       </div>
       <div class="form-group">
-           <label for="idAutor" class="form-label">Autor</label>
+           <label for="idAutor" class="form-label">**Autor**</label>
            <select class="form-select" id="idAutor" name="idAutor" required >
               <c:forEach var="item" items="${autores}"> 
                  <option value="${item.idAutor}" ${item.idAutor == libro.autor.idAutor? 'selected' : ''}>${item.nombre} ${item.apellido}</option>
